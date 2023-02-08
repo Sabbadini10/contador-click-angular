@@ -1,0 +1,25 @@
+.contenedor-card{
+  width: 400px;
+  height: 400px;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),-15px -15px 30px rgb(60, 60, 60);
+ }
+
+ .contenedor-card-numero{
+  font-size: 70px;
+ }
+
+.contenedor-card-botones{
+  margin-top: 2em;
+}
+
+.btn{
+  height: 40px;
+  width: 130px;
+}

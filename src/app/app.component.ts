@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contador';
+  contador: number = 0;
+  add(){
+    this.contador++
+  }
+
+  rest(){
+    this.contador--
+  }
 }
