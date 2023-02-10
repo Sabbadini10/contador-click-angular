@@ -3,9 +3,9 @@
     <h1 class="contenedor-card-numero text-white text-center">{{contador}}</h1>
   <hr />
   <div class="contenedor-card-botones d-flex flex-column align-items-center justify-content-center">
-    <button class="btn btn-primary mt-1 py-1" (click)="add()">Sumar Click</button>
-    <button class="btn btn-info mt-1 py-1" (click)="rest()">Restar Click</button>
-    <button class="btn btn-dark mt-1 py-1" (click)="reset()">Resetear</button>
+    <app-button-add [contador]="contador" (onAdd)="handleAdd( $event)"></app-button-add>
+    <app-button-rest [contador]="contador" (onRest)="handleReset( $event)"></app-button-rest>
+    <app-button-reset [contador]="contador" (onReset)="handleReset( $event)"></app-button-reset>
   </div>
 
   </div>

@@ -7,16 +7,14 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   contador: number = 0;
-  add(){
-    this.contador++
+  handleAdd(value: number){
+this.contador = value;
+  }
+  handleReset(value: number){
+    this.contador = value;
   }
 
-  rest(){
-    this.contador--
+  handleRest(value: number){
+    this.contador = value;
   }
-
-  reset(){
-    this.contador = 0
-  }
-
 }
